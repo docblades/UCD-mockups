@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{4526E207-8E47-49DD-99EF-F599E6851114}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication2", "WpfApplication2\WpfApplication2.csproj", "{3B0625DB-F049-4E4B-95E1-E65E81038F18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{4526E207-8E47-49DD-99EF-F599E6851114}.Debug|x86.Build.0 = Debug|x86
 		{4526E207-8E47-49DD-99EF-F599E6851114}.Release|x86.ActiveCfg = Release|x86
 		{4526E207-8E47-49DD-99EF-F599E6851114}.Release|x86.Build.0 = Release|x86
+		{3B0625DB-F049-4E4B-95E1-E65E81038F18}.Debug|x86.ActiveCfg = Debug|x86
+		{3B0625DB-F049-4E4B-95E1-E65E81038F18}.Debug|x86.Build.0 = Debug|x86
+		{3B0625DB-F049-4E4B-95E1-E65E81038F18}.Release|x86.ActiveCfg = Release|x86
+		{3B0625DB-F049-4E4B-95E1-E65E81038F18}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
