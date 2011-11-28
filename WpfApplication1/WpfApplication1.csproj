@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="StepManager.cs" />
+    <Compile Include="StepAndWizardManager.cs" />
     <Compile Include="Wizard1.xaml.cs">
       <DependentUpon>Wizard1.xaml</DependentUpon>
     </Compile>
@@ -130,11 +130,8 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="color1.bmp" />
     <Resource Include="color1.png" />
-    <Resource Include="color2.bmp" />
     <Resource Include="color2.png" />
-    <Resource Include="color3.bmp" />
     <Resource Include="color3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

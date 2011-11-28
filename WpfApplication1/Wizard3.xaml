@@ -6,21 +6,36 @@
              mc:Ignorable="d" 
              d:DesignHeight="162" d:DesignWidth="384">
     <Grid>
-        <TextBlock Height="64" HorizontalAlignment="Left" Margin="12,50,0,0" Name="textBlock1" Text="Choose a color scheme for your store" VerticalAlignment="Top" Width="160" TextWrapping="Wrap" />
-        <Button Content="Color1" Height="23" HorizontalAlignment="Left" Margin="282,24,0,0" Name="button1" VerticalAlignment="Top" Width="75">
-            <Button.Background>
-                <ImageBrush ImageSource="/WpfApplication1;component/color1.png" />
-            </Button.Background>
-        </Button>
-        <Button Content="Color2" Height="23" HorizontalAlignment="Left" Margin="282,63,0,0" Name="button2" VerticalAlignment="Top" Width="75">
-            <Button.Background>
-                <ImageBrush ImageSource="/WpfApplication1;component/color2.png" />
-            </Button.Background>
-        </Button>
-        <Button Content="Color3" Height="23" HorizontalAlignment="Left" Margin="282,100,0,0" Name="button3" VerticalAlignment="Top" Width="75">
-            <Button.Background>
-                <ImageBrush ImageSource="/WpfApplication1;component/color3.png" />
-            </Button.Background>
-        </Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*" />
+            <RowDefinition Height="38*" />
+            <RowDefinition Height="38*" />
+            <RowDefinition Height="38*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170*" />
+            <ColumnDefinition Width="41*" />
+            <ColumnDefinition Width="71*" />
+            <ColumnDefinition Width="102*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Height="64" HorizontalAlignment="Left" Margin="19,2,0,0" Name="textBlock1" Text="Choose a color scheme for your store" VerticalAlignment="Top" Width="151" TextWrapping="Wrap" Grid.Row="1" Grid.RowSpan="2" />
+        <RadioButton Content="FooColor" Grid.Column="2" Height="16" HorizontalAlignment="Left" Margin="0,31,0,0" Name="radioButton1" VerticalAlignment="Top">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="ColorGroup" />
+            </RadioButton.BindingGroup>
+        </RadioButton>
+        <RadioButton Content="BarColor" Grid.Column="2" Height="16" HorizontalAlignment="Left" Margin="0,22,0,0" Name="radioButton2" VerticalAlignment="Top" Grid.Row="1">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="ColorGroup" />
+            </RadioButton.BindingGroup>
+        </RadioButton>
+        <RadioButton Content="BazColor" Grid.Column="2" Height="16" HorizontalAlignment="Left" Margin="1,22,0,0" Name="radioButton3" VerticalAlignment="Top" Grid.Row="2">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="ColorGroup" />
+            </RadioButton.BindingGroup>
+        </RadioButton>
+        <Image Grid.Column="3" Height="16" HorizontalAlignment="Left" Margin="0,31,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="90" Source="/WpfApplication1;component/color1.png" />
+        <Image Height="16" HorizontalAlignment="Left" Margin="0,22,0,0" Name="image2" Source="/WpfApplication1;component/color2.png" Stretch="Fill" VerticalAlignment="Top" Width="90" Grid.Column="3" Grid.Row="1" />
+        <Image Height="16" HorizontalAlignment="Left" Margin="0,22,0,0" Name="image3" Source="/WpfApplication1;component/color3.png" Stretch="Fill" VerticalAlignment="Top" Width="90" Grid.Column="3" Grid.Row="2" />
     </Grid>
 </UserControl>

@@ -6,12 +6,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="101" d:DesignWidth="332">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="138*" />
+            <ColumnDefinition Width="60*" />
+            <ColumnDefinition Width="134*" />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30*" />
             <RowDefinition Height="71*" />
         </Grid.RowDefinitions>
-        <TextBlock Height="47" HorizontalAlignment="Left" Margin="12,0,0,0" Name="textBlock1" Text="What category best fits your store?" VerticalAlignment="Top" TextAlignment="Right" Width="125" TextWrapping="Wrap" Grid.Row="1" />
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="200,0,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" Grid.Row="1">            
+        <TextBlock Height="47" HorizontalAlignment="Left" Margin="13,0,0,0" Name="textBlock1" Text="What category best fits your store?" VerticalAlignment="Top" TextAlignment="Right" Width="125" TextWrapping="Wrap" Grid.Row="1" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Name="comboBox1" VerticalAlignment="Top" Width="120" Grid.Row="1" Grid.Column="2">            
             <ComboBoxItem Name="cat2">Crafts</ComboBoxItem>
             <ComboBoxItem Name="cat3">Electronics</ComboBoxItem>
             <ComboBoxItem Name="cat1">Fashion</ComboBoxItem>
