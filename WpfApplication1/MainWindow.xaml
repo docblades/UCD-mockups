@@ -9,10 +9,10 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
-        <Label Content="1" Height="28" HorizontalAlignment="Left" Margin="371,29,0,0" Name="lblStep1" VerticalAlignment="Top" Target="{Binding}" MouseDoubleClick="DoubleClickStep1" />
-        <Label Content="2" Height="28" HorizontalAlignment="Left" Margin="393,29,0,0" Name="lblStep2" VerticalAlignment="Top" MouseDoubleClick="DoubleClickStep2" />
-        <Label Content="3" Height="28" HorizontalAlignment="Left" Margin="415,29,0,0" Name="lblStep3" VerticalAlignment="Top" MouseDoubleClick="DoubleClickStep3" />
-        <Label Content="4" Height="28" HorizontalAlignment="Left" Margin="437,29,0,0" Name="lblStep4" VerticalAlignment="Top" MouseDoubleClick="DoubleClickStep4" />
-        <Label Content="5" Height="28" HorizontalAlignment="Left" Margin="459,29,0,0" Name="lblStep5" VerticalAlignment="Top" MouseDoubleClick="DoubleClickStep5" />
+        <Label Content="1" Height="28" HorizontalAlignment="Left" Margin="371,29,0,0" Name="lblStep1" VerticalAlignment="Bottom" Target="{Binding}" MouseDoubleClick="DoubleClickStep1" VerticalContentAlignment="Bottom" />
+        <Label Content="2" Height="28" HorizontalAlignment="Left" Margin="393,29,0,0" Name="lblStep2" VerticalAlignment="Bottom" MouseDoubleClick="DoubleClickStep2" VerticalContentAlignment="Bottom" />
+        <Label Content="3" Height="28" HorizontalAlignment="Left" Margin="415,29,0,0" Name="lblStep3" VerticalAlignment="Bottom" MouseDoubleClick="DoubleClickStep3" VerticalContentAlignment="Bottom" />
+        <Label Content="4" Height="28" HorizontalAlignment="Left" Margin="437,29,0,0" Name="lblStep4" VerticalAlignment="Bottom" MouseDoubleClick="DoubleClickStep4" VerticalContentAlignment="Bottom" />
+        <Label Content="5" Height="28" HorizontalAlignment="Left" Margin="459,29,0,0" Name="lblStep5" VerticalAlignment="Bottom" MouseDoubleClick="DoubleClickStep5" VerticalContentAlignment="Bottom" />
     </Grid>
 </Window>

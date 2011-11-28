@@ -9,11 +9,7 @@ namespace WpfApplication1
     {
         private IList<Label> Steps { get; set; }
 
-        public int CurrentStep
-        {
-            public get;
-            private set;
-        }
+        public int CurrentStep { get; set; }
 
         public int Max
         {
@@ -22,6 +18,9 @@ namespace WpfApplication1
                 return Steps.Count;
             }
         }
+
+        private const int DEFAULTFONTSIZE = 12;
+        private const int ACTIVEFONTSIZE = 16;
 
         public StepManager(IEnumerable<Label> steps)
         {
@@ -52,8 +51,13 @@ namespace WpfApplication1
             int stepIndex = stepNum - 1;
             var lblCurrentStep = Steps[stepIndex];
             lblCurrentStep.FontWeight = FontWeights.ExtraBold;
+            lblCurrentStep.FontSize = ACTIVEFONTSIZE;
 
-            Steps.Where(step => step != lblCurrentStep).ToList().ForEach(step => step.FontWeight = FontWeights.Normal);
+            foreach (var step in Steps.Where(step => step != lblCurrentStep))
+            {
+                step.FontWeight = FontWeights.Normal;
+                step.FontSize = DEFAULTFONTSIZE;
+            }
         }
 
         public void AdvanceStep()

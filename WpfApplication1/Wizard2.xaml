@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WpfApplication1.Wizard2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="101" d:DesignWidth="332">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="71*" />
+        </Grid.RowDefinitions>
+        <TextBlock Height="47" HorizontalAlignment="Left" Margin="12,0,0,0" Name="textBlock1" Text="What category best fits your store?" VerticalAlignment="Top" TextAlignment="Right" Width="125" TextWrapping="Wrap" Grid.Row="1" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="200,0,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" Grid.Row="1">            
+            <ComboBoxItem Name="cat2">Crafts</ComboBoxItem>
+            <ComboBoxItem Name="cat3">Electronics</ComboBoxItem>
+            <ComboBoxItem Name="cat1">Fashion</ComboBoxItem>
+            <ComboBoxItem Name="cat4">Furnishings</ComboBoxItem>
+            <ComboBoxItem Name="cat6">Music/Videos</ComboBoxItem>
+            <ComboBoxItem Name="cat5">Miscellaneous</ComboBoxItem>            
+        </ComboBox>
+    </Grid>
+</UserControl>

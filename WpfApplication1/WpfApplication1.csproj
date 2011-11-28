@@ -56,6 +56,22 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="StepManager.cs" />
+    <Compile Include="Wizard1.xaml.cs">
+      <DependentUpon>Wizard1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard2.xaml.cs">
+      <DependentUpon>Wizard2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard3.xaml.cs">
+      <DependentUpon>Wizard3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard4.xaml.cs">
+      <DependentUpon>Wizard4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard5.xaml.cs">
+      <DependentUpon>Wizard5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WizardStep.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +84,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Wizard1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wizard2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wizard3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wizard4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wizard5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -92,6 +128,14 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="color1.bmp" />
+    <Resource Include="color1.png" />
+    <Resource Include="color2.bmp" />
+    <Resource Include="color2.png" />
+    <Resource Include="color3.bmp" />
+    <Resource Include="color3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

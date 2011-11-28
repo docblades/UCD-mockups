@@ -34,6 +34,7 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+            SetupStepManager();
         }
 
         private void DoubleClickStep1(object sender, MouseButtonEventArgs e)
